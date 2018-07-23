@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>编程玩-开源编程玩法社区</title>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link rel="shortcut icon" href="manykit/manykit.ico">
+		<script type="text/javascript" src="morphic.js"></script>
+		<script type="text/javascript" src="widgets.js"></script>
+		<script type="text/javascript" src="blocks.js"></script>
+		<script type="text/javascript" src="manykit/blocks.js"></script>
+		<script type="text/javascript" src="manykit/pxframe.js"></script>
+		<script type="text/javascript" src="threads.js"></script>
+		<script type="text/javascript" src="manykit/threads.js"></script>
+		<script type="text/javascript" src="objects.js"></script>
+		<script type="text/javascript" src="manykit/objects.js"></script>
+		<script type="text/javascript" src="gui.js"></script>
+		<script type="text/javascript" src="manykit/playergui.js"></script>
+		<script type="text/javascript" src="paint.js"></script>
+		<script type="text/javascript" src="lists.js"></script>
+		<script type="text/javascript" src="byob.js"></script>
+		<script type="text/javascript" src="tables.js"></script>
+		<script type="text/javascript" src="symbols.js"></script>
+		<script type="text/javascript" src="xml.js"></script>
+		<script type="text/javascript" src="store.js"></script>
+		<script type="text/javascript" src="locale.js"></script>
+		<script type="text/javascript" src="cloud.js"></script>
+		<script type="text/javascript" src="manykit/cloud.js"></script>
+		<script type="text/javascript" src="sha512.js"></script>
+		<script type="text/javascript" src="FileSaver.min.js"></script>
+		<script type="text/javascript" src="manykit/base64.js"></script>
+		<script type="text/javascript">
+			var world;
+			var ide;
+			window.onload = function () {
+				world = new WorldMorph(document.getElementById('world'));
+                world.worldCanvas.focus();
+				ide = new IDE_Morph();
+				ide.openIn(world);
+				// ide.toggleAppMode(true);
+				// setInterval(loop, 30);
+				loop();
+			};
+			function loop() {
+				ide.toggleAppMode(true);
+        		requestAnimationFrame(loop);
+				world.doOneCycle();
+			}
+		</script>
+	</head>
+	<body style="margin: 0;">
+		<div id="playerimg" onclick="videoPlay()"><img src="./player.png" alt=""></div>
+		<canvas id="world"  tabindex="1" width="767" height="575" style="position: absolute;" />
+	</body>
+	<script>
+		function videoPlay(){
+			document.getElementById('playerimg').style.cssText="display:none"
+			ide.pressStart() 
+		}
+		// function videostop(){
+		// 	document.getElementById('playerimg').style.cssText="display:block"
+		// 	ide.togglePauseResume() 
+		// }
+	</script>
+</html>
+<style>
+#playerimg{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: #333;
+	opacity: 0.8;
+	text-align: center;
+	cursor: pointer;
+}
+#playerimg img{
+	position:absolute;
+	width: 69px;
+	height: 69px;
+	z-index: 1000;
+	top: 43%;
+	left: 45.2%;
+	cursor: pointer;
+}
+
+</style>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>欢迎来到编程玩PXsnap!</title>
+		<link rel="shortcut icon" href="manykit/manykit.ico">
+		<script type="text/javascript" src="test.js"></script>
+		<script type="text/javascript" src="morphic.js"></script>
+		<script type="text/javascript" src="widgets.js"></script>
+		<script type="text/javascript" src="blocks.js"></script>
+		<script type="text/javascript" src="manykit/blocks.js"></script>
+		<script type="text/javascript" src="manykit/pxframe.js"></script>
+		<script type="text/javascript" src="threads.js"></script>
+		<script type="text/javascript" src="manykit/threads.js"></script>
+		<script type="text/javascript" src="objects.js"></script>
+		<script type="text/javascript" src="manykit/objects.js"></script>
+		<script type="text/javascript" src="gui.js"></script>
+		<script type="text/javascript" src="manykit/gui.js"></script>
+		<script type="text/javascript" src="paint.js"></script>
+		<script type="text/javascript" src="lists.js"></script>
+		<script type="text/javascript" src="byob.js"></script>
+		<script type="text/javascript" src="tables.js"></script>
+		<script type="text/javascript" src="symbols.js"></script>
+		<script type="text/javascript" src="xml.js"></script>
+		<script type="text/javascript" src="store.js"></script>
+		<script type="text/javascript" src="locale.js"></script>
+		<script type="text/javascript" src="cloud.js"></script>
+		<script type="text/javascript" src="manykit/cloud.js"></script>
+		<script type="text/javascript" src="sha512.js"></script>
+		<script type="text/javascript" src="FileSaver.min.js"></script>
+		<script type="text/javascript" src="manykit/base64.js"></script>
+		 <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+		<script type="text/javascript" src="./jquery/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script> -->
+		<script type="text/javascript">
+			var world;
+			var ide;
+			window.onload = function () {
+				world = new WorldMorph(document.getElementById('world'));
+
+                ide = new IDE_Morph();
+                ide.openIn(world);
+
+                ide.inform = function(title, message, callback) { 
+                    var myself = this;
+                    if (!myself.informing) {
+                        var box = new DialogBoxMorph();
+                        myself.informing = true;
+                        box.ok = function() { 
+                            myself.informing = false;
+                            if (callback) { callback() };
+                            this.accept();
+                        };
+                        box.inform(title, message, world)
+                    }
+                };
+
+                setInterval(loop, 1);
+			};
+			function loop() {
+				world.doOneCycle();
+			}
+		</script>
+	</head>
+	<body style="margin: 0;">
+		<div class="canvasbox01">
+			<div class="header01">
+				<div class="headbox">
+					<div class="snapheader">
+						<ul class="snapheaderleft">
+							<li><img src="" alt=""><p>编程玩</p></li>
+							<li class="borderlight"><img src="" alt=""><p>打开</p></li>
+							<li class="borderlight"><img src="" alt=""><p onclick="ide.createNewProject()">新建</p></li>
+							<li class="borderlight"><img src="" alt="" ><p onclick="ide.exportProject()">保存</p></li>
+							<li class="borderlight"><img src="" alt="" ><p>发布</p></li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+			<div class="canvasworld">
+				 <canvas id="world" tabindex="1"></canvas> 
+			</div>
+		</div>	
+	</body>
+</html>
+<style>
+	.canvasbox01{
+		width: 100%;
+		height: 90%;
+	}
+	.canvasbox01 .header01{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 75%;
+	height: 30px;
+	background: linear-gradient(to right,#0078D7, #fff);
+	z-index: 1000;
+	margin: 0px;
+	padding: 0px;
+}
+.canvasbox01 .header01 .headbox{
+	width: 1344px;
+	height: 30px;
+	margin: 0 auto;
+}
+.canvasbox01 .header01 .snapheaderleft{
+	list-style: none;
+	position: relative;
+	width: 800px;
+	height: 30px;
+	top:-14px;	
+}
+.canvasbox01 .header01 .snapheaderleft li{
+	float: left;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0.7;	
+}
+.canvasbox01 .header01 .snapheaderleft li p{	
+	position: relative;
+	top: -35px;
+}
+.canvasbox01 .header01 .snapheaderleft li:hover{	
+	opacity: 1;
+}
+.canvasbox01 .header01 .borderlight{
+	border-left: 1px solid #fff;
+	padding-left: 55px;
+}
+.canvasbox01 .canvasworld{
+	position: fixed;
+	top: 4px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+}
+</style>

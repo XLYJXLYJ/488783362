@@ -1,0 +1,597 @@
+<html>
+<head>
+
+<!-- content type -->
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+
+<!-- viewport -->
+<meta content="width=device-width,initial-scale=1" name="viewport">
+   
+<!-- title -->
+<title>jQuery多功能书本翻页特效</title>
+			
+<!-- add css -->
+<link type="text/css" href="css/style.css" rel="stylesheet">
+
+
+
+<!-- add js -->
+<script src="js/jquery.js"></script>
+<script src="js/turn.js"></script>              
+<script src="js/jquery.fullscreen.js"></script>
+<script src="js/jquery.address-1.6.min.js"></script>
+<script src="js/onload.js"></script>
+
+
+<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow:auto !important;
+}
+</style> 
+  
+</head>
+
+<body>  
+  
+<!-- BEGIN FLIPBOOK STRUCTURE -->   
+<div data-template="true" data-cat="book7" id="fb7-ajax">  
+  
+
+         
+    <!-- BEGIN HTML BOOK -->     
+    <div data-current="book7" class="fb7" id="fb7">      
+    
+        <!-- preloader -->
+        <div class="fb7-preloader">
+            <div id="wBall_1" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_2" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_3" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_4" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_5" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+        </div>
+              
+        <!-- background for book -->  
+        <div class="fb7-bcg-book"></div>               
+      
+        <!-- BEGIN CONTAINER BOOK -->
+        <div id="fb7-container-book">
+     
+           <!-- BEGIN deep linking -->  
+           <section id="fb7-deeplinking">
+             <ul>
+                 <li data-address="page1" data-page="1"></li>
+                 <li data-address="page2-page3" data-page="2"></li>
+                 <li data-address="page2-page3" data-page="3"></li>
+                 <li data-address="page4-5" data-page="4"></li>
+                 <li data-address="page4-5" data-page="5"></li>
+                 <li data-address="page6-page7" data-page="6"></li>
+                 <li data-address="page6-page7" data-page="7"></li>
+                 <li data-address="page8-page9" data-page="8"></li>
+                 <li data-address="page8-page9" data-page="9"></li>
+                 <li data-address="end" data-page="10"></li>  
+             </ul>
+           </section>
+           <!-- END deep linking -->  
+        
+            
+           <!-- BEGIN ABOUT -->
+           <section id="fb7-about">
+                   <h1>中国空军<strong>
+                   <p style="color:#fff;">中国人民解放军空军（Air Force of the CPLA）于1949年11月11日正式成立，经过半个世纪的建设，人民空军已经发展成为一支由航空兵、地空导弹兵、高射炮兵、雷达兵、空降兵、电子对抗、气象等多兵种合成，由歼击机、强击机、轰炸机、运输机等多机种组成的现代化的高技术军种。主要任务是担负国土防空，支援陆、海军作战，对敌后方实施空袭，进行空运和航空侦察。</p>
+                   
+                   <h1>中国陆军<strong>
+                   <p style="color:#fff;">中国人民解放军陆军现主要由步兵（摩托化步兵、机械化步兵）、炮兵（地面炮兵、高射炮兵）、装甲兵、工程兵、通讯兵、防化兵和侦察兵、电子对抗、汽车兵、测绘兵、气象兵等专业部队组成。</p>
+				<h1>中国海军 <strong>
+                   <p style="color:#fff;">中国人民解放军海军以新型航空母舰、新型驱逐舰、新型潜艇、新型战斗机为代表的新一代主战装备，以及与其相配套的新型导弹、鱼雷、舰炮，电子战装备等武器系统陆续交付使用。人民海军已经拥有大型区域防空舰、核动力潜艇、AIP潜艇等世界先进武器装备，中国人民解放军海军航空兵现已装备了轰炸机、巡逻机、电子干扰机、水上飞机、运输机等勤务飞机。海防导弹形成系列，不仅有岸对舰导弹、舰对舰导弹，还有舰对空导弹、空对舰导弹、空对空导弹等。</p>
+                   <p>&nbsp;</p>
+                   <p>&nbsp;</p>
+                   <p>&nbsp;</p>
+                   <p>&nbsp;</p>
+           </section>
+           <!-- END ABOUT -->
+    
+    
+            <!-- BEGIN PAGES -->
+            <div id="fb7-book">       
+              
+            
+                    <!-- BEGIN PAGE 1 -->          
+                    <div style="background-image:url(images/1.jpg)" class="fb7-noshadow">
+                           
+                         <!-- begin container page book --> 
+                         <div class="fb7-cont-page-book">
+                           
+                            <!-- description for page --> 
+                            <div class="fb7-page-book">
+                        
+                            </div> 
+                            
+                            
+                         </div>
+                        <!-- end container page book --> 
+                            
+                    </div>
+                    <!-- END PAGE 1 -->
+                      
+                    
+                    
+                    <!-- BEGIN PAGE 2 -->         
+                    <div style="background-image:url()" >
+                           
+                         <!-- begin container page book -->
+                         <div class="fb7-cont-page-book">
+                           
+                             <!-- description for page  --> 
+                            <div class="fb7-page-book">
+                                    <h1>歼-20 特点介绍</h1>
+                                    <h6>鸭式布局</h6>
+                                    <ol>
+                                    <li><a href="javascript:setPage(4)">歼-20采用单座、双发、全动差动、(无附面层隔道超音速进气道)、上反鸭翼带尖拱边条的鸭式气动布局。歼-20的相对主翼的位置比歼-10进一步靠前，增大了，增强了效用，所以较小的鸭翼就可以达到很大的作用。
+									此布局使飞机拥有较优秀的超音速控制率，良好的大仰角升力特性，较大的瞬时攻角与滚转率。但鸭式布局最大的缺点为最大攻角与持续攻角的矛盾性，并且鸭翼偏转时产生强度较大的镜面反射回波，对飞机头向(雷达散射截面)影响甚至比常规布局飞机大。</a></li>
+                                    </ol>
+                                    <h6>翼面全动</h6>
+                                    <ol>
+                                    <li><a href="javascript:setPage(4)">歼-20的鸭翼和是全动的。国外已知的第五代战斗机中，只有T-50带有，F-22 和 F-35 都是常规的固定垂尾加可动舵面。</a></li>
+                                    </ol>
+                                    <h6>DSI进气</h6>
+                                    <ol>
+                                    <li><a href="javascript:setPage(4)">歼-20采用了DSI(无附面层隔板超音速)进气道，用三维复杂曲面的凸曲面(鼓包状，用于压缩气流)把进气中的附面层迎面剖开，然后用压力梯度顶到进气口的两角泄放。歼-20的 DSI 为可调进气道。</a></li>
+                                   
+                                    </ol>
+                                    <h6>腹鳍设计</h6>
+                                    <ol>
+                                    <li><a href="javascript:setPage(4)">在目前已知的第五代战斗机中，歼-20是唯一采用腹鳍的。俄罗斯的T-50 或许可以用推力转向补充大迎角方向稳定性的主动控制，F-22、F-35 可没有这样的能力。但是F-22发动机是矢量发动机，发动机喷口推力可以上下变动。而歼20目前用的发动机还不是矢量的，是属于标量的。</a></li>
+                                
+                                    </ol>
+								    <h6>隐身设计</h6>
+                                    <ol>
+                                    <li><a href="javascript:setPage(4)">有消息称歼-20已经采用的局部、反无源探测涂料，可以使中国的第五代战斗机隐身性能达到或超越。 该技术可用于关键目标的红外伪装，在不影响超材料雷达吸波性能的前提下，实现红外伪装与宽频雷达隐身的兼容，控制目标的红外辐射特性与背景一致，从而使其在红外热像仪上无法辨识。</a></li>
+                                
+                                    </ol>
+                            
+                            
+                            </div>                     
+                                  
+                                      
+                            <!-- begin number page -->                
+                            <div class="fb7-meta">                        
+                                    <span class="fb7-num">2</span>                         
+                            </div>
+                            <!-- end number page --> 
+                             
+                            
+                            
+                          </div>
+                          <!-- end container page book -->
+                            
+                    </div>
+                     <!-- END PAGE 2 -->
+                      
+                    
+                    <!-- BEGIN PAGE 3 -->          
+                    <div style="background-image:url(images/3.jpg)" >
+                           
+                         <!-- begin container page book -->
+                         <div class="fb7-cont-page-book">
+                           
+                                <!-- description for page--> 
+                                <div class="fb7-page-book">
+                                                 
+                                </div>                           
+                                      
+                                          
+                                <!-- begin number page  -->                
+                                <div class="fb7-meta">
+                                    
+                                        <span class="fb7-num">3</span>
+                                     
+                                </div>
+                                <!-- end number page  -->                    
+                            
+                            
+                          </div> 
+                          <!-- end container page book -->
+                            
+                    </div>
+                    <!-- END PAGE 3 -->
+                      
+                    
+                    <!-- BEGIN PAGE 4-5 -->           
+                    <div style="background-image:url(images/4_5.jpg)" class="fb7-double fb7-first fb7-noshadow">
+                           
+                         <!-- begin container page book -->
+                         <div class="fb7-cont-page-book">
+                           
+                                <!-- description for page --> 
+                                <div class="fb7-page-book">
+                                                 
+                                </div> 
+                                   
+                          </div> 
+                          <!-- end container page book --> 
+                            
+                    </div>
+                    
+                           
+                    <div style="background-image:url(images/4_5.jpg)" class="fb7-double fb7-second fb7-noshadow">
+                           
+                         <!-- begin container page book --> 
+                         <div class="fb7-cont-page-book">
+                           
+                                <!-- description for page --> 
+                                <div class="fb7-page-book">
+                                                 
+                                </div> 
+                             
+                          </div> 
+                          <!-- end container page book -->
+                            
+                    </div>
+                    <!-- END PAGE 4-5 -->
+                      
+                    
+                    <!-- BEGIN PAGE 6 -->          
+                    <div style="background-image:url(images/6.jpg)">
+                           
+                         <!-- begin container page book --> 
+                         <div class="fb7-cont-page-book">
+                           
+                                <!-- description for page --> 
+                                <div class="fb7-page-book">
+                                                 
+                                </div> 
+                                                                
+                                          
+                                <!-- begin number page  -->                 
+                                <div class="fb7-meta">
+                                    
+                                        <span class="fb7-num">6</span>
+                                     
+                                </div>
+                                <!-- end number page  --> 
+                          
+                          </div>
+                          <!-- end container page book --> 
+                            
+                    </div>
+                     <!-- END PAGE 6 -->
+                      
+                    
+                    <!-- BEGIN PAGE 7 -->          
+                    <div style="background-image:url()">
+                           
+                         <!-- begin container page book -->
+                         <div class="fb7-cont-page-book">
+                           
+                             <!-- description for page  --> 
+                            <div class="fb7-page-book">
+                                        <h1>中国海军驱逐舰 052C型导弹驱逐舰</h1>
+                                        <p style="color:#2E577C!important; font-weight: 100">2013年12月26日上午，第四艘052C型导弹驱逐舰151号郑州舰入列命名授旗仪式在东海舰队某驱逐舰支队隆重举行，标志着该舰正式加入人民海军战斗序列。</p>
+                                        <p style="color:#2E577C!important; font-weight: 100">郑州舰是我国自行研制设计生产的新一代导弹驱逐舰，为有着“中华神盾”美誉的052C驱逐舰后续舰，也是东海舰队继150长春舰之后入列的第二艘该型舰艇。该舰舷号151，最大长度155米，宽17米，满载排水量6000余吨，装备了多套我国自主研发的新型武器装备，性能先进，技术含量高，可单独或协同海军其他兵力攻击水面舰艇、潜艇，具有较强的远程警戒探测和区域防空作战能力。</p>
+                                        <p style="color:#2E577C!important; font-weight: 100">052C型导弹驱逐舰，北约代号旅洋-Ⅱ级，是中国人民解放军海军的一型防空导弹驱逐舰，首舰170兰州号于2005年9月服役。本级舰亦为全世界现役军舰中第三个安装了四面大型固定式有源相控阵雷达的军舰之一（另外为日本的日向级直升机驱逐舰和秋月级护卫舰），本级舰的服役使中国海军第一次拥有了远程区域防空能力，被誉为中华神盾舰，为中国现役战力最强的驱逐舰。
+已有4艘服役，分别是南海舰队的170兰州舰、171海口舰， 东海舰队的150长春舰，151郑州舰。还有2艘已下水。</p>
+                                        <p style="color:#2E577C!important; font-weight: 100">052C沿用052B型驱逐舰的舰体基本设计，推进、电力供应相同，不过上层结构经过修改，艏楼较052B更高以容纳相控阵，舰体尺寸幅度也略为放大，052B满载排水量5850吨级，而052C的满载排水量则提高到6400至6500吨左右。052C设置一个机库，反潜直升机选用俄制卡-28直升机或直-9C。</p>
+                                        <p style="color:#2E577C!important; font-weight: 100">现在可以得出结论，采用与现代级驱逐舰类似装备的052B只是一种填补战力空隙的过渡性舰种，而技术跨度大较具前瞻性的052C才是中国新世纪防空舰艇的真正重点发展型号。</p>
+								        <p style="color:#2E577C!important; font-weight: 100">052C最引人注目之处就是艏楼四周加装了四具大型的固定式相控阵天线，即H/LJG 346主动相控阵雷达系统。由于搭载了舰载有源相控阵雷达，且配备有性能优秀的红旗-9型防空导弹，因此该级舰具有较强的远程警戒探测和区域防空作战能力，将进一步强化舰队的区域防空能力。</p>
+                                      
+                                        </ul>                  
+                            </div> 
+                                  
+                                  
+                                      
+                            <!-- begin number page  -->                 
+                            <div class="fb7-meta">
+                                
+                                    <span class="fb7-num">7</span>
+                                 
+                            </div>
+                            <!-- end number page  -->  
+                             
+                            
+                            
+                          </div>
+                          <!-- end container page book -->
+                            
+                    </div>
+                    <!-- END PAGE 7 -->
+                      
+                    
+                    <!-- BEGIN PAGE 8 -->          
+                    <div style="background-image:url()">
+                           
+                         <!-- begin container page book -->
+                         <div class="fb7-cont-page-book">
+                           
+                             <!-- description for page --> 
+                            <div class="fb7-page-book">
+                                <h1>辽宁号航空母舰</h1>
+                                <p style="color:#2E577C!important; font-weight: 100">辽宁号航空母舰（代号：001型航空母舰，舷号：16，简称：辽宁舰），是中国人民解放军海军隶下的一艘可以搭载固定翼飞机的航空母舰，也是中国第一艘服役的航空母舰。</p>
+                                <p style="color:#2E577C!important; font-weight: 100" >辽宁号航空母舰前身是苏联海军的库兹涅佐夫元帅级航空母舰次舰瓦良格号，20世纪80年代中后期，瓦良格号于乌克兰建造时遭逢苏联解体，建造工程中断，完成度68%。1999年，中国购买了瓦良格号，于2002年3月4日抵达大连港。2005年4月26日，开始由中国海军继续建造改进。解放军的目标是对此艘未完成建造的航空母舰进行更改制造，及将其用于科研、实验及训练用途。2012年9月25日，正式更名辽宁号，交付予中国人民解放军海军。</p>
+                                <p style="color:#2E577C!important;font-weight: 100" >2013年11月，辽宁舰从青岛赴中国南海展开为期47天的海上综合演练，期间中国海军以辽宁号航空母舰为主编组了大型远洋航空母舰战斗群，战斗群编列近20艘各类舰艇。这是自冷战结束以来除美国海军外西太平洋地区最大的单国海上兵力集结演练，亦标志着辽宁号航空母舰开始具备海上编队战斗群能力。</p>
+                                <p style="color:#2E577C!important; font-weight: 100">苏联时期，其军事指导思想首先否决了核战争能够赢得战争胜利的观点，核战争“不可能成为达到政治战略目的的手段”，所以苏联和俄罗斯海军仍然重视常规武装力量建设，鉴于苏联和俄罗斯航空母舰舰载机数量有限，质量跟不上，且不可能为航空母舰配备像美国航母战斗群那样的护航舰队，因此，适当增强航母自身的攻击能力就显得尤为重要。</p>
+                                <p style="color:#2E577C!important; font-weight: 100">尽管以牺牲舰载机的数量来装备强大的反舰和防空导弹系统与传统航空母舰的发展趋势格格不入，但是苏联海军并没有把航空母舰作为一个主要的进攻反击力量，而是将航空母舰作为一种辅助力量，将航空母舰的载机能力与巡洋舰的攻击能力集成在一起，一定程度上不仅增强了航母自身的攻击能力和防卫能力，也可以减小航空母舰编队规模。从而用航空母舰掩护导弹巡洋舰和攻击核潜艇进入还击来犯航空母舰的攻击阵位，然后利用苏海军具有强大攻击力量的导弹威慑/击毁来犯航空母舰。这就是之所以在这种军事指导思想下建立的苏联海军，即使没有像西方那样先进的航空母舰，但是却能够与西方航母舰队相抗衡的条件。</p>
+                                
+                            
+                            </div> 
+                                  
+                                  
+                                      
+                            <!-- begin number page -->                
+                            <div class="fb7-meta">                        
+                                    <span class="fb7-num">8</span>
+                                 
+                            </div>
+                            <!-- end number page --> 
+                             
+                            
+                            
+                          </div> 
+                          <!-- end container page book -->
+                            
+                    </div>
+                     <!-- END PAGE 8 -->
+                      
+                    
+                    
+                    
+                    <!-- BEGIN PAGE 9 -->          
+                    <div style="background-image:url(images/9.jpg)">
+                           
+                         <!-- begin container page book --> 
+                         <div class="fb7-cont-page-book">
+                           
+                             <!-- description for page --> 
+                            <div class="fb7-page-book">
+                                             
+                            </div>                           
+                                  
+                                      
+                            <!-- begin number page -->               
+                            <div class="fb7-meta">
+                                
+                                    <span class="fb7-num">9</span>
+                                 
+                            </div>
+                            <!-- end number page -->
+                            
+                             
+                            
+                            
+                          </div>
+                          <!-- end container page book -->
+                           
+                            
+                    </div>
+                     <!-- END PAGE 9 -->
+                      
+                    
+                    <!-- BEGIN PAGE 10 -->          
+                    <div style="background-image:url()">
+                           
+                         <!-- begin container page book --> 
+                         <div class="fb7-cont-page-book">
+                           
+                                <!-- description for page--> 
+                                <div class="fb7-page-book">
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <h1 style="padding-left: 150px;">&nbsp;结束</h1>                    
+                                </div> 
+                                    
+                         </div>
+                         <!-- end container page book -->
+                            
+                    </div>
+                    <!-- END PAGE 10 -->
+                                  
+           
+            
+            </div>
+            <!-- END PAGES -->
+                       
+            
+            <!-- arrows -->
+            <a class="fb7-nav-arrow prev"></a>
+            <a class="fb7-nav-arrow next"></a>
+                    
+            <!-- shadow -->
+            <div class="fb7-shadow"></div>
+    
+        </div>
+        <!-- END CONTAINER BOOK -->
+    
+        <!-- BEGIN FOOTER -->
+        <div id="fb7-footer">
+        
+            <div class="fb7-bcg-tools"></div>
+            
+            <div class="fb7-menu" id="fb7-center">
+                <ul>
+                
+                    <!-- margin left -->
+                    <li></li>
+                            
+                    <!-- icon download -->
+                    <li>
+                        <a title="Pdf File Or Zip" class="fb7-download" href="#"></a>
+                    </li>
+                                            
+                    
+                    <!-- icon_zoom_in -->                         
+                    <li>
+                        <a title="Zoom In" class="fb7-zoom-in"></a>
+                    </li>
+                                    
+                    
+                    <!-- icon_zoom_out -->                 
+                    <li>
+                        <a title="Zoom Out" class="fb7-zoom-out"></a>
+                    </li>
+                                    
+                    
+                    <!-- icon_zoom_auto -->
+                    <li>
+                        <a title="Zoom Auto" class="fb7-zoom-auto"></a>
+                    </li>
+                                    
+                    
+                    <!-- icon_zoom_original -->
+                    <li>
+                        <a title="Zoom Original (Scale 1:1)" class="fb7-zoom-original"></a>
+                    </li>
+                                     
+                    
+                    <!-- icon_allpages -->
+                    <li>
+                        <a title="Show All Pages " class="fb7-show-all"></a>
+                    </li>
+                                                    
+                    
+                    <!-- icon_home -->
+                    <li>
+                        <a title="Show Home Page" class="fb7-home"></a>
+                    </li>
+                                    
+                    <!-- icon fullscreen -->                 
+                    <li>
+                        <a title="Full / Normal Screen" class="fb7-fullscreen"></a>
+                    </li>
+                            
+                    <!-- margin right -->                 
+                    <li></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="fb7-menu" id="fb7-right">
+                <ul>                              
+                    <!-- icon page manager -->                 
+                    <li class="fb7-goto">
+                        <label for="fb7-page-number" id="fb7-label-page-number"></label>
+                        <input type="text" id="fb7-page-number">
+                        <button type="button">Go</button>
+                    </li>
+         
+                </ul>
+            </div>     
+                
+        </div>
+        <!-- END FOOTER -->
+    
+        <!-- BEGIN THUMBS -->
+        <div id="fb7-all-pages" class="fb7-overlay">
+    
+          <section class="fb7-container-pages">
+    
+            <div id="fb7-menu-holder">
+    
+                <ul id="fb7-slider">
+                
+                         <!-- PAGE 1 - THUMB -->
+                         <li class="1">
+                           <img alt="" src="images/1_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 2 - THUMB -->
+                         <li class="2">
+                           <img alt="" src="images/2_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 3 - THUMB -->
+                         <li class="3">
+                           <img alt="" src="images/3_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 4-5 - THUMB -->
+                         <li class="5">
+                           <img alt="" src="images/4_5_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 6 - THUMB -->
+                         <li class="6">
+                           <img alt="" src="images/6_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 7 - THUMB -->
+                         <li class="7">
+                           <img alt="" src="images/7_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 8 - THUMB -->
+                         <li class="8">
+                           <img alt="" src="images/8_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 9 - THUMB -->
+                         <li class="9">
+                           <img alt="" src="images/9_.jpg">
+                         </li>
+                         
+                         <!-- PAGE 10S - THUMB -->
+                         <li class="10">
+                           <img alt="" src="images/end_.jpg">
+                         </li>
+          
+                </ul>
+            
+            </div>
+    
+        </section>
+    
+       </div>
+        <!-- END THUMBS -->
+
+   </div>
+    <!-- END HTML BOOK -->    
+    
+    
+</div>
+<!-- END FLIPBOOK STRUCTURE --> 
+
+
+<!-- CONFIGURATION FLIPBOOK -->    
+<script>
+jQuery('#fb7-ajax').data('config',
+    {
+		"page_width":"640",
+		"page_height":"920",
+		"go_to_page":"Page",
+		"gotopage_width":"45",
+		"zoom_double_click":"1",
+		"zoom_step":"0.06",
+		"tooltip_visible":"true",
+		"toolbar_visible":"true",
+		"deeplinking_enabled":"true",
+		"double_click_enabled":"true",
+		"rtl":"false"
+     })
+</script>
+
+
+</body>
+</html>
